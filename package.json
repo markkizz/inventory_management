@@ -8,6 +8,12 @@
   },
   "scripts": {
     "init": "npm install && cd fron-tend && npm install && cd ../back-end && npm install && cd ..",
-    "init:y": "yarn install && cd fron-tend && yarn install && cd ../back-end && yarn install && cd .."
+    "init:y": "yarn install && cd fron-tend && yarn install && cd ../back-end && yarn install && cd ..",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:y": "concurrently \"yarn start:backend:y\" \"yarn start:frontend:y\"",
+    "start:frontend": "cd front-end && npm start",
+    "start:backend": "cd back-end && npm start",
+    "start:frontend:y": "cd front-end && yarn start",
+    "start:backend:y": "cd back-end && yarn start"
   }
 }
