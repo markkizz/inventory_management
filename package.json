@@ -1,9 +1,13 @@
 {
-  "name": "G-able-inventory-management",
+  "name": "G_able_inventory_management",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "concurrently": "^5.1.0"
+  },
+  "scripts": {
+    "init": "npm install && cd fron-tend && npm install && cd ../back-end && npm install && cd ..",
+    "init:y": "yarn install && cd fron-tend && yarn install && cd ../back-end && yarn install && cd .."
   }
 }
