@@ -1,0 +1,9 @@
+{
+  "name": "G-able-inventory-management",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
